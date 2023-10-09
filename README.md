@@ -1,5 +1,5 @@
 
-# EDCET
+# EDiiCET
 
 [![Python test status](https://github.com/learningequality/EDCET/actions/workflows/tox.yml/badge.svg?branch=develop)](https://github.com/learningequality/EDCET/actions/workflows/tox.yml)
 [![JS test status](https://github.com/learningequality/EDCET/actions/workflows/yarn.yml/badge.svg?branch=develop)](https://github.com/learningequality/EDCET/actions/workflows/yarn.yml)
