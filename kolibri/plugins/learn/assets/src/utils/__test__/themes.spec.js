@@ -20,19 +20,19 @@ describe('theme validator', () => {
 
   it('accepts valid colors for the theme', () => {
     const validTheme = {
-      appBarColor: 'rgb(247, 138, 224)',
-      textColor: '#282a36',
+      appBarColor: '#ffb502',
+      textColor: 'black',
       backdropColor: 'lightblue',
-      backgroundColor: 'rgba(40, 42, 54, 1.00)',
+      backgroundColor: '#ffb502',
     };
     const theme = validateChannelTheme(validTheme);
     expect(logWarn).not.toHaveBeenCalled();
     expect(logError).not.toHaveBeenCalled();
     expect(theme).toEqual({
-      appBarColor: 'rgb(247, 138, 224)',
+      appBarColor: '#ffb502',
       textColor: '#282a36',
       backdropColor: 'rgba(173, 216, 230, 0.7)', // opacity is added to backdrop color
-      backgroundColor: 'rgba(40, 42, 54, 1.00)',
+      backgroundColor: '#ffb502',
     });
   });
 

@@ -2,7 +2,7 @@
 
   <div
     v-show="!$isPrint"
-    :style="{ backgroundColor: $themeTokens.appBar }"
+    :style="{ backgroundColor: '#ffb502' }"
   >
 
     <header>
@@ -68,7 +68,7 @@
                 v-if="pointsDisplayed"
                 class="points-popover"
                 :style="{
-                  color: $themeTokens.text,
+                  color: '#ffb502',
                   padding: '8px',
                   backgroundColor: $themeTokens.surface,
                 }"
@@ -83,7 +83,7 @@
               <KIcon
                 icon="person"
                 :style="{
-                  fill: $themeTokens.textInverted,
+                  fill: '$themeTokens.textInverted',
                   height: '24px',
                   width: '24px',
                   margin: '4px',

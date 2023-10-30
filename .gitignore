@@ -17,7 +17,6 @@ docker-whl.iid
 .eggs
 *.egg
 *.egg-info
-dist
 dist-packages-temp
 dist-packages-cache
 build
@@ -68,7 +67,6 @@ output/*/index.html
 docs/_build
 
 # node
-node_modules
 npm-debug.log
 yarn-error.log
 lerna-debug.log

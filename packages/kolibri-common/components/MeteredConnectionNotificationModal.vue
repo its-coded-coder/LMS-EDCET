@@ -1,7 +1,7 @@
 <template>
 
   <KModal
-    v-if="displayMeteredConnectionWarning"
+    v-if="!displayMeteredConnectionWarning"
     :title="$tr('modalTitle')"
     :submitText="coreString('continueAction')"
     @submit="$emit('submit')"

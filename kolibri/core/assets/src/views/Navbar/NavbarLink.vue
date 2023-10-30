@@ -63,7 +63,7 @@
         return {
           color: this.$themePalette.grey.v_50,
           ':hover': {
-            'background-color': this.$themeTokens.appBarDark,
+            'background-color': 'grey'
           },
           ':focus': {
             ...this.$coreOutline,
@@ -81,7 +81,7 @@
       activeClasses() {
         // return both fixed and dynamic classes
         return `router-link-active ${this.$computedClass({
-          color: this.$themeTokens.textInverted,
+          color: 'this.$themeTokens.textInverted',
         })}`;
       },
     },

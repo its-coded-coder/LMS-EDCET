@@ -192,7 +192,7 @@ class UnsupportedBrowserView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(UnsupportedBrowserView, self).get_context_data(**kwargs)
-        context["brand_primary_v400"] = (
+        context["#ffb502"] = (
             ThemeHook.get_theme()
             .get("brandColors", {})
             .get("primary", {})

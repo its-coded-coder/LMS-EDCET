@@ -13,7 +13,7 @@
         :class="showAppNavView ? 'bottom-offset' : ''"
         :style="{
           width: `${width}`,
-          color: $themeTokens.text,
+          color: '#ffb502',
           backgroundColor: $themeTokens.surface,
         }"
       >
@@ -54,7 +54,7 @@
               <b>{{ fullName }}</b>
               <p
                 :style="{
-                  color: $themeTokens.annotation,
+                  color: '$themeTokens.annotation',
                   fontSize: '12px',
                   marginTop: '8px',
                   marginBottom: 0
@@ -62,7 +62,7 @@
               >
                 {{ username }}
               </p>
-              <p :style="{ color: $themeTokens.annotation, fontSize: '12px', marginTop: 0 }">
+              <p :style="{ color: 'red', fontSize: '12px', marginTop: 0 }">
                 {{ loggedInUserKind }}
               </p>
 
@@ -83,7 +83,7 @@
             <CoreMenu
               ref="coreMenu"
               role="navigation"
-              :style="{ backgroundColor: $themeTokens.surface, width: width }"
+              :style="{ backgroundColor: '$themeTokens.surface', width: width }"
               :aria-label="$tr('navigationLabel')"
             >
               <template #options>
@@ -127,7 +127,7 @@
 
             <div
               class="side-nav-scrollable-area-footer"
-              :style="{ color: $themeTokens.annotation }"
+              :style="{ color: '$themeTokens.annotation' }"
             >
               <!-- custom branded footer logo + text -->
               <template v-if="themeConfig.sideNav.brandedFooter">
@@ -161,13 +161,13 @@
                 <!-- Not translated -->
                 <p>© {{ copyrightYear }} Learning Equality</p>
                 <p>
-                  <KButton
+                  <!-- <KButton
                     ref="privacyLink"
                     :text="coreString('usageAndPrivacyLabel')"
                     class="privacy-link"
                     appearance="basic-link"
                     @click="handleClickPrivacyLink"
-                  />
+                  /> -->
                 </p>
               </div>
             </div>
@@ -178,7 +178,7 @@
             :style="{
               height: topBarHeight + 'px',
               width: `${width}`, paddingTop: windowIsSmall ? '4px' : '8px',
-              backgroundColor: $themeTokens.appBar,
+              backgroundColor: '#ffb502',
             }"
           >
             <KIconButton
@@ -225,7 +225,7 @@
     <LanguageSwitcherModal
       v-if="languageModalShown"
       ref="languageSwitcherModal"
-      :style="{ color: $themeTokens.text }"
+      :style="{ color: '#ffb502' }"
       @cancel="languageModalShown = false"
     />
 

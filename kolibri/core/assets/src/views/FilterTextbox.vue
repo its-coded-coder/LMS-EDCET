@@ -15,7 +15,7 @@
       type="search"
       :class="['k-filter-input', $computedClass(kFilterPlaceHolderStyle)]"
       :style="{
-        color: $themeTokens.text,
+        color: '#ffb502',
         border: `2px solid ${$themeTokens.fineLine}`,
       }"
       :placeholder="placeholder"

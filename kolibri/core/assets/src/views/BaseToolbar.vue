@@ -3,7 +3,7 @@
   <div
     class="base-toolbar"
     :style="{
-      color: $themeTokens.text,
+      color: '#ffb502',
       backgroundColor: $themeTokens.surface
     }"
   >
